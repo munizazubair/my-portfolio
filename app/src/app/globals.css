@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+body {
+
+  /* background: #1E1E2E;  deep muted purple-gray */
+  background: #101d40;
+  color: #c0c6d7;
+  /* background: linear-gradient(135deg, #001d3d 0%, #ffffff 100%); */
+  /* color: #F5F5F5; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* wrapper to hide overflow */
+.typewriter-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+/* typewriter text */
+.typewriter {
+  display: inline-block;
+  /* font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace; */
+  border-right: .12em solid currentColor; /* caret */
+  padding-right: .05em;
+  box-sizing: content-box;
+  width: 0ch;
+  animation: typing 3s steps(18) forwards, blinkCaret .7s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0ch; }
+  to   { width: 18ch; } /* total characters in text */
+}
+
+/* blinking caret */
+@keyframes blinkCaret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
+
+
