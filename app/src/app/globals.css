@@ -47,3 +47,7 @@ html {
 }
 
 
+.blur-heading {
+    backdrop-filter: blur(15px);
+    /* background-color: black; */
+  }
